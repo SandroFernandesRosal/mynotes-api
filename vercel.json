@@ -1,15 +1,18 @@
 {
   "version": 2,
   "public": true,
-  "build": 
+  "builds": [
   {
     "src": "src/server.js",
     "use": "@vercel/node"
-  },
+  }
+],
   "routes": [
     {
       "src": "/(.*)",
       "dest": "src/server.js"
-    }
+    },
+
+    { "src": "/users", "methods": ["POST"], "dest": "src/routes/user.routes.js" }
   ]
 }
