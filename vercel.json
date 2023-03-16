@@ -9,24 +9,7 @@
 ],
   "routes": [
    
-    {
-      "src": "/users",
-      "dest": "src/routes/user.routes.js"
-    },
-    {
-      "src": "/notes",
-      "dest": "src/routes/notes.routes.js"
-    },
-
-    {
-      "src": "/sessions",
-      "dest": "src/routes/sessions.routes.js"
-    },
-
-    {
-      "src": "/tags",
-      "dest": "src/routes/tags.routes.js"
-    }
+    { "src": "/src/routes/(.*)", "dest": "/index.js" }
 
   ]
 }
