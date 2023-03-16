@@ -3,16 +3,16 @@
   "public": true,
   "builds": [
   {
-    "src": "src/server.js",
+    "src": "server.js",
     "use": "@vercel/node"
   }
 ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/server.js"
-    },
+      "dest": "/server.js"
+    }
 
-    { "src": "/users", "methods": ["POST"], "dest": "src/routes/index.js" }
+    
   ]
 }
