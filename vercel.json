@@ -10,7 +10,7 @@
   "routes": [
    
     {
-      "src": "/register",
+      "src": "/users",
       "dest": "src/routes/user.routes.js"
     },
     {
