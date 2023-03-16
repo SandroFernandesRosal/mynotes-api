@@ -13,6 +13,6 @@
       "dest": "src/server.js"
     },
 
-    { "src": "/users", "methods": ["POST"], "dest": "src/routes/user.routes.js" }
+    { "src": "/users", "methods": ["POST"], "dest": "src/routes/index.js" }
   ]
 }
